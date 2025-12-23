@@ -488,14 +488,4 @@ python -m src.hybrid_mapper_v2
 # 4. Test LLM integration
 python tests/test_llm.py
 ```
-
-This is the kind of system a senior engineer would design for production - powerful yet cost-effective!
-- ✅ Passes all 10 golden test cases
-- ✅ Handles ambiguity intelligently (Context Wins)
-- ✅ Avoids false positives (Honesty)
-- ✅ Respects structure (Hierarchy)
-- ✅ Scales to 5,000+ categories
-- ✅ Minimizes LLM costs (65% savings vs naive approach)
-- ✅ Prevents hallucination (constrained outputs)
-
-This is the kind of system a senior engineer would design for production.
+My first try at something Netflix recommendation like system.
