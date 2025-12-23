@@ -1,0 +1,23 @@
+sentence-transformers>=2.2.0
+numpy>=1.21.0
+torch>=1.9.0
+requests>=2.28.0
+python-dotenv>=1.0.0
+
+# LLM Providers
+
+# HuggingFace API (Recommended)
+huggingface_hub>=0.16.0
+
+# Groq Cloud API (Alternative)
+groq>=0.4.0
+
+# LlamaCpp local GGUF models (Alternative)
+# llama-cpp-python>=0.2.0
+
+# Ollama local server (No package needed)
+
+# API deployment
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0

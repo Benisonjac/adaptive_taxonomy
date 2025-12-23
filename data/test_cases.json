@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "blurb": "Two rival executives are forced to work together on a merger, constantly clashing until they realize their competition masks deeper feelings.",
+    "user_tags": ["Romance", "Workplace"],
+    "expected": "Enemies-to-Lovers"
+  },
+  {
+    "id": 2,
+    "blurb": "Agent Smith must recover the stolen nuclear codes from a foreign operative without being detected by enemy intelligence.",
+    "user_tags": ["Action", "Spies"],
+    "expected": "Espionage"
+  },
+  {
+    "id": 3,
+    "blurb": "The decaying mansion holds dark secrets as the new heir discovers the tragic history of her ancestors haunting the corridors.",
+    "user_tags": ["Dark", "Mystery"],
+    "expected": "Gothic"
+  },
+  {
+    "id": 4,
+    "blurb": "In a neon-lit dystopian city, a hacker falls in love with an AI consciousness while fighting corporate control.",
+    "user_tags": ["Love", "Technology", "Future"],
+    "expected": "Cyberpunk"
+  },
+  {
+    "id": 5,
+    "blurb": "The lawyer must navigate courtroom drama and uncover the truth behind the murder before an innocent person is convicted.",
+    "user_tags": ["Crime", "Justice"],
+    "expected": "Legal Thriller"
+  },
+  {
+    "id": 6,
+    "blurb": "Learn how to bake the perfect sourdough bread with this step-by-step guide including kneading techniques and fermentation tips.",
+    "user_tags": ["Cooking", "Tutorial"],
+    "expected": "[UNMAPPED]"
+  },
+  {
+    "id": 7,
+    "blurb": "After years apart, childhood sweethearts reunite in their hometown and must confront the painful past that drove them apart.",
+    "user_tags": ["Romance", "Reunion"],
+    "expected": "Second Chance"
+  },
+  {
+    "id": 8,
+    "blurb": "A physicist discovers a method for faster-than-light travel but must deal with the scientific and ethical implications of causality violation.",
+    "user_tags": ["Science", "Space"],
+    "expected": "Hard Sci-Fi"
+  },
+  {
+    "id": 9,
+    "blurb": "A masked killer stalks teenagers at a remote summer camp, picking them off one by one in increasingly brutal ways.",
+    "user_tags": ["Horror", "Survival"],
+    "expected": "Slasher"
+  },
+  {
+    "id": 10,
+    "blurb": "A comprehensive guide to personal finance, covering budgeting strategies, investment basics, and retirement planning for beginners.",
+    "user_tags": ["Finance", "Education"],
+    "expected": "[UNMAPPED]"
+  }
+]
