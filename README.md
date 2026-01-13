@@ -30,10 +30,6 @@ adaptive_taxonomy/
 │   ├── data/test_llm.py              # LLM integration tests
 │   ├── examples.py              # Usage examples
 │   └── verify_setup.py          # Setup verification
-├── docs/                         # Documentation
-│   ├── SETUP_LLM.md             # LLM setup guide
-│   ├── QUICKSTART.md            # Quick start guide
-│   └── src/system_design.md         # Architecture docs
 ├── README.md                     # This file
 ├── requirements.txt              # Dependencies
 ├── .env.example                  # Environment template
@@ -70,12 +66,6 @@ The main mapper engine with:
 
 ### 4. `src/taxonomy_mapper.py` (Alternative)
 Original rule-based implementation (keyword matching). Kept for comparison.
-
-### 5. `docs/system_design.md`
-System Design Document answering:
-- How to scale to 5,000 categories
-- How to handle 1M stories/month cheaply
-- How to prevent LLM hallucination
 
 ---
 
@@ -124,9 +114,6 @@ ollama pull llama3.2:3b
 # Add to .env file:
 LLM_PROVIDER=ollama
 ```
-
-**See [docs/SETUP_LLM.md](docs/SETUP_LLM.md) for detailed setup instructions**
-
 ---
 
 ## Running the System
@@ -144,7 +131,7 @@ ID   | Source                    | Predicted            | Expected             |
 1    | Vector_Search (Tier 1)    | Enemies-to-Lovers    | Enemies-to-Lovers    | ✓ PASS
 2    | Vector_Search (Tier 1)    | Espionage            | Espionage            | ✓ PASS
 3    | Vector_Search (Tier 1)    | Gothic               | Gothic               | ✓ PASS
-4    | LLM_Fallback              | Cyberpunk            | Cyberpunk            | ✓ PASS
+4    | Vector_Search (Tier 1)    | Cyberpunk            | Cyberpunk            | ✓ PASS
 5    | Vector_Search (Tier 1)    | Legal Thriller       | Legal Thriller       | ✓ PASS
 6    | LLM_Fallback              | [UNMAPPED]           | [UNMAPPED]           | ✓ PASS
 7    | Vector_Search (Tier 1)    | Second Chance        | Second Chance        | ✓ PASS
@@ -394,7 +381,7 @@ Adjust semantic anchors for your domain. The current anchors are calibrated for 
 pip install -r requirements.txt
 ```
 
-**2. Setup FREE LLM** (see [docs/SETUP_LLM.md](docs/SETUP_LLM.md)):
+**2. Setup FREE LLM**:
 ```bash
 # Quick start with Groq (RECOMMENDED):
 # 1. Get key from https://console.groq.com
@@ -480,7 +467,6 @@ pip install -r requirements.txt
 # 2. Setup a FREE LLM (choose one):
 #    - Groq: Get key from https://console.groq.com
 #    - Ollama: Install from https://ollama.ai
-#    - See docs/SETUP_LLM.md for details
 
 # 3. Run tests
 python -m src.hybrid_mapper_v2
